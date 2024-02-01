@@ -25,9 +25,7 @@ function LeftSidebar() {
                                 height={24}
                                 width={24}
                             />
-                            <p className="text-heading3-bold text-light-1 max-xs:hidden">
-                                {link.label}
-                            </p>
+                             <p className='text-light-1 max-lg:hidden'>{link.label}</p>
                         </Link>
                     )
                 }
@@ -35,7 +33,7 @@ function LeftSidebar() {
             </div>
             <div className="mt-10 px-6">
                 <SignedIn>
-                    <SignOutButton>
+                    <SignOutButton signOutCallback={() => router.push('/sign-in')}>
                         <div className="flex cursor-pointer gap-4 p-4">
                             <Image
                                 src="/assets/logout.svg"

@@ -26,13 +26,11 @@ function Topbar() {
                                     width={24}
                                     height={24}
                                 />
-
                             </div>
                         </SignOutButton>
                     </SignedIn>
                 </div>
-            </div>
-
+                
             <OrganizationSwitcher
                 appearance={
                     {
@@ -42,6 +40,8 @@ function Topbar() {
                     }
                 }
             />
+            </div>
+
         </nav>
     )
 }
